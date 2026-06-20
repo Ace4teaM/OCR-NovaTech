@@ -166,7 +166,7 @@ dependencies = [
 ]
 ```
 
-ce dernier correspond à la racine des dépendances créé avec `uv add`, donc techniquement il ne manque pas de dépendances au projet.
+Ce dernier correspond à la racine des dépendances créé avec `uv add`, donc techniquement il ne manque pas de dépendances au projet.
 
 Cependant, nous pouvons partir du principe que les sous-dépendances utilisées par les `import` dans le code doivent être importées individuellement à la racine, dans ce cas voici les dépendances manquantes:
 
@@ -249,11 +249,11 @@ augementation_salaire_precedente_percent
 note_evaluation_actuelle
 ```
 
-Sont également redondante mais au sens métier peuvent avoir un intérêt distinct car elles n'indique pas la même chose. 
+Sont également redondante mais au sens métier peuvent avoir un intérêt distinct car elles n'indiquent pas la même chose. 
 
 **résultat**
 
-Pour le moment il est trop tôt pour supprimé l'un des 2 variables car elles peuvent être utile au modèle.
+Pour le moment il est trop tôt pour supprimer l'une des 2 variables car elles peuvent être utile au modèle.
 
 Il faut pousser l'analyse un peu plus loin en vérifiant la corrélation avec la cible ainsi que les features importances.
 
